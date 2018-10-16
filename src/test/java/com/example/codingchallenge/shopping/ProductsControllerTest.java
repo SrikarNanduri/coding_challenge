@@ -18,6 +18,7 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
 import static org.junit.Assert.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 
 @RunWith(SpringRunner.class)
@@ -36,8 +37,8 @@ String exampleJson = "[{\"productId\": \"Dwt5F7KAhi\",\"quantity\": 2},{\"produc
     public void addToCart() throws Exception {
         RequestBuilder requestBuilder = MockMvcRequestBuilders
                 .post("/cart")
+                .param("userid", "123")
                 .accept(MediaType.APPLICATION_JSON)
-                .param("123")
                 .content(exampleJson)
                 .contentType(MediaType.APPLICATION_JSON);
 
@@ -45,13 +46,32 @@ String exampleJson = "[{\"productId\": \"Dwt5F7KAhi\",\"quantity\": 2},{\"produc
 
         MockHttpServletResponse response = result.getResponse();
 
-        assertEquals(HttpStatus.CREATED.value(), response.getStatus()); }
+        assertEquals(HttpStatus.OK.value(), response.getStatus()); }
 
     @Test
-    public void checkOut() {
+    public void checkOut() throws Exception {
+
+        RequestBuilder requestBuilder = MockMvcRequestBuilders.get(
+                "/checkout/123")
+                .accept(
+                MediaType.APPLICATION_JSON);
+
+        MvcResult result = mockMvc.perform(requestBuilder)
+                .andDo(print()).andReturn();
+
+        System.out.println(result.getResponse().getStatus());
+
     }
 
     @Test
-    public void getOrder() {
+    public void getOrder() throws Exception {
+        RequestBuilder requestBuilder = MockMvcRequestBuilders.get(
+                "order/user/123")
+                .accept(
+                        MediaType.APPLICATION_JSON);
+
+        MvcResult result = mockMvc.perform(requestBuilder).andReturn();
+
+        System.out.println(result.getResponse().getStatus());
     }
 }
