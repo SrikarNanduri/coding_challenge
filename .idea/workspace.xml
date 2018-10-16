@@ -812,7 +812,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539710387240" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539710569949" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -840,7 +840,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ProductsControllerTest.addToCart">
+  <component name="RunManager" selected="JUnit.ProductsControllerTest">
     <configuration name="CodingChallengeApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.codingchallenge.CodingChallengeApplication" />
       <module name="coding_challenge_main" />
@@ -854,21 +854,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="coding_challenge" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list />
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <method v="2" />
+    <configuration name="ProductsControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="coding_challenge_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.codingchallenge.shopping.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.codingchallenge.shopping" />
+      <option name="MAIN_CLASS_NAME" value="com.example.codingchallenge.shopping.ProductsControllerTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="ProductsControllerTest.addToCart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="coding_challenge_test" />
@@ -920,18 +918,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.CodingChallengeApplication" />
-      <item itemvalue="Gradle.coding_challenge" />
       <item itemvalue="JUnit.ProductsControllerTest.addToCart" />
       <item itemvalue="JUnit.ProductsControllerTest.checkOut" />
       <item itemvalue="JUnit.ProductsControllerTest.getOrder" />
+      <item itemvalue="JUnit.ProductsControllerTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ProductsControllerTest.addToCart" />
+        <item itemvalue="JUnit.ProductsControllerTest" />
         <item itemvalue="JUnit.ProductsControllerTest.checkOut" />
+        <item itemvalue="JUnit.ProductsControllerTest.addToCart" />
         <item itemvalue="JUnit.ProductsControllerTest.getOrder" />
         <item itemvalue="Application.CodingChallengeApplication" />
-        <item itemvalue="Gradle.coding_challenge" />
       </list>
     </recent_temporary>
   </component>
