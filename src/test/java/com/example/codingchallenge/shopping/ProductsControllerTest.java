@@ -28,10 +28,10 @@ public class ProductsControllerTest {
     @Autowired
     private MockMvc mockMvc;
 
-    @MockBean
-    private CartCalculator cartCalculator;
 
 String exampleJson = "[{\"productId\": \"Dwt5F7KAhi\",\"quantity\": 2},{\"productId\": \"PWWe3w1SDU\",\"quantity\": 2}]";
+String mockCheckOutBody = "{\"cart\":{\"cartItems\":[{\"productId\":\"Dwt5F7KAhi\",\"quantity\":2},{\"productId\":\"PWWe3w1SDU\",\"quantity\":2}]},\"promotions\":[],\"discountAmt\":1398.0,\"totalAmt\":4196.0,\"netAmt\":2798.0}";
+String mockOrderBody = "[{\"cart\":{\"cartItems\":[{\"productId\":\"Dwt5F7KAhi\",\"quantity\":2},{\"productId\":\"PWWe3w1SDU\",\"quantity\":2}]},\"promotions\":[],\"discountAmt\":1398.0,\"totalAmt\":4196.0,\"netAmt\":2798.0}]";
 
     @Test
     public void addToCart() throws Exception {
@@ -59,19 +59,25 @@ String exampleJson = "[{\"productId\": \"Dwt5F7KAhi\",\"quantity\": 2},{\"produc
         MvcResult result = mockMvc.perform(requestBuilder)
                 .andDo(print()).andReturn();
 
-        System.out.println(result.getResponse().getStatus());
+        MockHttpServletResponse response = result.getResponse();
+        assertEquals(HttpStatus.OK.value(), response.getStatus());
+        assertEquals(mockCheckOutBody, response.getContentAsString());
+
 
     }
 
     @Test
     public void getOrder() throws Exception {
         RequestBuilder requestBuilder = MockMvcRequestBuilders.get(
-                "order/user/123")
+                "/order/user/123")
                 .accept(
                         MediaType.APPLICATION_JSON);
 
-        MvcResult result = mockMvc.perform(requestBuilder).andReturn();
+        MvcResult result = mockMvc.perform(requestBuilder).andDo(print()).andReturn();
 
-        System.out.println(result.getResponse().getStatus());
+        MockHttpServletResponse response = result.getResponse();
+        assertEquals(HttpStatus.OK.value(), response.getStatus());
+        assertEquals(mockOrderBody, response.getContentAsString());
+
     }
 }
