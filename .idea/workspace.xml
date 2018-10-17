@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3dc1a53c-77e3-4e54-a2c4-b62b4f1cb54b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/coding_challenge_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/coding_challenge_test.iml" afterDir="false" />
+    <list default="true" id="3dc1a53c-77e3-4e54-a2c4-b62b4f1cb54b" name="Default Changelist" comment="Updates to testcases.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/codingchallenge/model/Promotion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/codingchallenge/model/Promotion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/codingchallenge/exception/ShoppingCartException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/codingchallenge/exception/ShoppingCartException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/codingchallenge/shopping/ProductsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/codingchallenge/shopping/ProductsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/codingchallenge/util/CartCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/codingchallenge/util/CartCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/codingchallenge/shopping/ProductsControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/codingchallenge/shopping/ProductsControllerTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -104,13 +100,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ProductsController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ProductsController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/codingchallenge/shopping/ProductsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="53" selection-start-line="53" selection-end-line="53" />
+            <state relative-caret-position="47">
+              <caret line="44" column="71" selection-start-line="44" selection-start-column="71" selection-end-line="44" selection-end-column="71" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1010#1011#0" expanded="true" />
+                <element signature="e#1053#1054#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -119,7 +117,7 @@
       <file leaf-file-name="InvocableHandlerMethod.java" pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.0.9.RELEASE/c19005e8a2a2216b0e9da304f1dce8ba0d72e110/spring-web-5.0.9.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
+            <state relative-caret-position="1836">
               <caret line="140" selection-start-line="140" selection-end-line="140" />
             </state>
           </provider>
@@ -128,7 +126,7 @@
       <file leaf-file-name="ServletInvocableHandlerMethod.java" pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.0.9.RELEASE/631cf6fd5e89e7797b0504994338fe07c983a551/spring-webmvc-5.0.9.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
+            <state relative-caret-position="1462">
               <caret line="127" selection-start-line="127" selection-end-line="127" />
             </state>
           </provider>
@@ -137,17 +135,20 @@
       <file leaf-file-name="RequestMappingHandlerAdapter.java" pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.0.9.RELEASE/631cf6fd5e89e7797b0504994338fe07c983a551/spring-webmvc-5.0.9.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
+            <state relative-caret-position="11798">
               <caret line="808" selection-start-line="808" selection-end-line="808" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductsControllerTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ProductsControllerTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/example/codingchallenge/shopping/ProductsControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="84" column="34" selection-start-line="84" selection-start-column="34" selection-end-line="84" selection-end-column="34" />
+            <state relative-caret-position="197">
+              <caret line="60" selection-start-line="60" selection-end-line="60" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -164,8 +165,8 @@
       <file leaf-file-name="Promotion.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/codingchallenge/model/Promotion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+            <state relative-caret-position="255">
+              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
               <folding>
                 <element signature="e#318#319#0" expanded="true" />
                 <element signature="e#343#344#0" expanded="true" />
@@ -195,11 +196,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Products.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/codingchallenge/model/Products.java">
+      <file leaf-file-name="CartCalculator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/codingchallenge/util/CartCalculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
+            <state relative-caret-position="404">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -207,11 +208,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CartCalculator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/codingchallenge/util/CartCalculator.java">
+      <file leaf-file-name="ShoppingCartException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/codingchallenge/exception/ShoppingCartException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="85">
+              <caret line="5" column="37" lean-forward="true" selection-start-line="5" selection-end-line="6" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -681,12 +682,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/codingchallenge/model/Products.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/codingchallenge/util/PriceComputer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/codingchallenge/util/ShoppingCart.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/codingchallenge/exception/ShoppingCartException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/codingchallenge/util/Orders.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/codingchallenge/util/CartCalculator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/codingchallenge/shopping/ProductsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/codingchallenge/model/Promotion.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/codingchallenge/shopping/ProductsControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/codingchallenge/util/CartCalculator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/codingchallenge/exception/ShoppingCartException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/codingchallenge/shopping/ProductsController.java" />
       </list>
     </option>
   </component>
@@ -701,6 +702,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -821,8 +824,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -854,7 +855,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ProductsControllerTest">
+  <component name="RunManager" selected="Application.CodingChallengeApplication">
     <configuration name="CodingChallengeApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.codingchallenge.CodingChallengeApplication" />
       <module name="coding_challenge_main" />
@@ -966,8 +967,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ProductsControllerTest" />
         <item itemvalue="Application.CodingChallengeApplication" />
+        <item itemvalue="JUnit.ProductsControllerTest" />
         <item itemvalue="JUnit.ProductsControllerTest.checkOut" />
         <item itemvalue="JUnit.ProductsControllerTest.addToCart" />
         <item itemvalue="JUnit.ProductsControllerTest.getOrder" />
@@ -985,24 +986,17 @@
       <option name="presentableId" value="Default" />
       <updated>1539675111210</updated>
     </task>
+    <task id="LOCAL-00001" summary="Updates to testcases.">
+      <created>1539751785646</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1539751785646</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ProductsControllerTest_addToCart - 2018.10.16 at 22h 44m 51s.xml">
-      <configuration name="ProductsControllerTest.addToCart" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProductsControllerTest_addToCart - 2018.10.16 at 22h 47m 42s.xml">
-      <configuration name="ProductsControllerTest.addToCart" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProductsControllerTest - 2018.10.17 at 10h 04m 51s.xml">
-      <configuration name="ProductsControllerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProductsControllerTest - 2018.10.17 at 10h 06m 44s.xml">
-      <configuration name="ProductsControllerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProductsControllerTest - 2018.10.17 at 10h 07m 50s.xml">
-      <configuration name="ProductsControllerTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ProductsControllerTest - 2018.10.17 at 10h 08m 22s.xml">
       <configuration name="ProductsControllerTest" configurationId="JUnit" />
     </history-entry>
@@ -1018,51 +1012,70 @@
     <history-entry file="ProductsControllerTest - 2018.10.17 at 10h 16m 19s.xml">
       <configuration name="ProductsControllerTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ProductsControllerTest - 2018.10.17 at 10h 17m 51s.xml">
+      <configuration name="ProductsControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProductsControllerTest - 2018.10.17 at 10h 18m 32s.xml">
+      <configuration name="ProductsControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProductsControllerTest - 2018.10.17 at 10h 19m 08s.xml">
+      <configuration name="ProductsControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProductsControllerTest - 2018.10.17 at 10h 44m 12s.xml">
+      <configuration name="ProductsControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProductsControllerTest - 2018.10.17 at 10h 52m 16s.xml">
+      <configuration name="ProductsControllerTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Tool Output" />
-      <window_info id="Azure Explorer" />
+      <window_info anchor="bottom" id="Tool Output" order="7" />
+      <window_info id="Azure Explorer" order="2" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5026652" side_tool="true" weight="0.4030501" />
       <window_info anchor="right" id="Maven Projects" order="8" />
-      <window_info anchor="bottom" id="Azure Activity Log" />
+      <window_info anchor="bottom" id="Azure Activity Log" order="7" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Designer" order="3" />
-      <window_info anchor="bottom" id="Build" order="10" sideWeight="0.49733475" weight="0.4030501" />
-      <window_info anchor="bottom" id="ANTLR Preview" />
+      <window_info anchor="bottom" id="ANTLR Preview" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="5" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49642345" weight="0.40413943" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49642345" visible="true" weight="0.40413943" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49570817" weight="0.32765958" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="HDInsight Spark Submission" />
+      <window_info anchor="bottom" id="HDInsight Spark Submission" order="7" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4985694" visible="true" weight="0.58605665" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4985694" weight="0.4291939" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49713877" weight="0.32921812" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18923241" />
-      <window_info anchor="right" id="UML design tool window" />
-      <window_info anchor="bottom" id="Remote Spark Job in Cluster" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1913646" />
+      <window_info anchor="right" id="UML design tool window" order="4" />
+      <window_info anchor="bottom" id="Remote Spark Job in Cluster" order="7" />
       <window_info anchor="right" id="Gradle" order="5" />
-      <window_info anchor="bottom" id="Debug Remote Spark Job in Cluster" />
+      <window_info anchor="bottom" id="Debug Remote Spark Job in Cluster" order="7" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Build" order="10" sideWeight="0.49733475" weight="0.4030501" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Updates to testcases." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updates to testcases." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1073,22 +1086,127 @@
           <properties />
           <option name="timeStamp" value="12" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/example/codingchallenge/shopping/ProductsControllerTest.java</url>
-          <line>78</line>
-          <properties />
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/codingchallenge/shopping/ProductsController.java</url>
+          <line>45</line>
+          <properties class="com.example.codingchallenge.shopping.ProductsController" method="checkOut">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/codingchallenge/shopping/ProductsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1010#1011#0" expanded="true" />
+            <element signature="e#1053#1054#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.0.9.RELEASE/c19005e8a2a2216b0e9da304f1dce8ba0d72e110/spring-web-5.0.9.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2380">
+          <caret line="140" selection-start-line="140" selection-end-line="140" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.0.9.RELEASE/631cf6fd5e89e7797b0504994338fe07c983a551/spring-webmvc-5.0.9.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1462">
+          <caret line="127" selection-start-line="127" selection-end-line="127" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.0.9.RELEASE/631cf6fd5e89e7797b0504994338fe07c983a551/spring-webmvc-5.0.9.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13736">
+          <caret line="808" selection-start-line="808" selection-end-line="808" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/codingchallenge/util/PriceComputer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/codingchallenge/model/Promotion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding>
+            <element signature="e#318#319#0" expanded="true" />
+            <element signature="e#343#344#0" expanded="true" />
+            <element signature="e#379#380#0" expanded="true" />
+            <element signature="e#407#408#0" expanded="true" />
+            <element signature="e#438#439#0" expanded="true" />
+            <element signature="e#465#466#0" expanded="true" />
+            <element signature="e#505#506#0" expanded="true" />
+            <element signature="e#537#538#0" expanded="true" />
+            <element signature="e#573#574#0" expanded="true" />
+            <element signature="e#608#609#0" expanded="true" />
+            <element signature="e#661#662#0" expanded="true" />
+            <element signature="e#709#710#0" expanded="true" />
+            <element signature="e#741#742#0" expanded="true" />
+            <element signature="e#769#770#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/codingchallenge/CodingChallengeApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/codingchallenge/model/Products.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/codingchallenge/util/CartCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/codingchallenge/shopping/ProductsControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="63" column="70" lean-forward="true" selection-start-line="63" selection-start-column="70" selection-end-line="63" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/codingchallenge/shopping/ProductsController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="35" column="48" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1010#1011#0" expanded="true" />
+            <element signature="e#1053#1054#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1267,20 +1385,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/codingchallenge/exception/ShoppingCartException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-          <folding>
-            <element signature="e#152#153#0" expanded="true" />
-            <element signature="e#180#181#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/codingchallenge/model/Products.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
+        <state relative-caret-position="493">
           <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1290,8 +1397,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/codingchallenge/model/Promotion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        <state relative-caret-position="255">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
           <folding>
             <element signature="e#318#319#0" expanded="true" />
             <element signature="e#343#344#0" expanded="true" />
@@ -1311,50 +1418,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/codingchallenge/util/PriceComputer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/codingchallenge/util/CartCalculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/codingchallenge/shopping/ProductsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.0.9.RELEASE/c19005e8a2a2216b0e9da304f1dce8ba0d72e110/spring-web-5.0.9.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
+        <state relative-caret-position="1836">
           <caret line="140" selection-start-line="140" selection-end-line="140" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.0.9.RELEASE/631cf6fd5e89e7797b0504994338fe07c983a551/spring-webmvc-5.0.9.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
+        <state relative-caret-position="1462">
           <caret line="127" selection-start-line="127" selection-end-line="127" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.0.9.RELEASE/631cf6fd5e89e7797b0504994338fe07c983a551/spring-webmvc-5.0.9.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
+        <state relative-caret-position="11798">
           <caret line="808" selection-start-line="808" selection-end-line="808" />
         </state>
       </provider>
@@ -1368,8 +1448,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/example/codingchallenge/shopping/ProductsControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="84" column="34" selection-start-line="84" selection-start-column="34" selection-end-line="84" selection-end-column="34" />
+        <state relative-caret-position="197">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/codingchallenge/exception/ShoppingCartException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="37" lean-forward="true" selection-start-line="5" selection-end-line="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/codingchallenge/util/PriceComputer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/codingchallenge/util/CartCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/codingchallenge/shopping/ProductsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="44" column="71" selection-start-line="44" selection-start-column="71" selection-end-line="44" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1010#1011#0" expanded="true" />
+            <element signature="e#1053#1054#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

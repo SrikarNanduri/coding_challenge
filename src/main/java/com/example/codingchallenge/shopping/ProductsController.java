@@ -10,8 +10,11 @@ import com.example.codingchallenge.util.ICartCalculator;
 import com.example.codingchallenge.util.Orders;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.context.annotation.Bean;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 import java.util.HashMap;
 

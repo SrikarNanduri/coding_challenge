@@ -1,6 +1,7 @@
 package com.example.codingchallenge.util;
 
 
+import com.example.codingchallenge.exception.ShoppingCartException;
 import com.example.codingchallenge.model.Cart;
 import com.example.codingchallenge.model.CheckOutSummary;
 import com.example.codingchallenge.model.Products;
@@ -22,7 +23,12 @@ public class CartCalculator implements ICartCalculator {
 
     public CheckOutSummary calculate(Cart cart){
       for(int i = 0; i< cart.getCartItems().size(); i++){
-          Products product = getProductById(cart.getCartItems().get(i).getProductId());
+          Products product = null;
+          try {
+              product = getProductById(cart.getCartItems().get(i).getProductId());
+          } catch (ShoppingCartException e) {
+              e.printStackTrace();
+          }
           float price = new PriceComputer().getPrice(product,cart.getCartItems().get(i).getQuantity());
           netTotal += price*cart.getCartItems().get(i).getQuantity();
           total += product.getPrice() * cart.getCartItems().get(i).getQuantity();
@@ -37,24 +43,24 @@ public class CartCalculator implements ICartCalculator {
 
 
 
-    private List<Products> getAllProducts() {
+    private List<Products> getAllProducts() throws ShoppingCartException {
         ResponseEntity<Products[]> response = restTemplate.getForEntity(baseURL+"products", Products[].class);
         if(response.getStatusCode() == HttpStatus.OK) {
             return Arrays.asList(response.getBody());
         } else {
             System.out.println("Error connecting to the server");
-            return null;
+            throw new ShoppingCartException("Unable to get the product catalog");
         }
     }
 
 
-    private Products getProductById(String id) {
+    private Products getProductById(String id) throws ShoppingCartException {
         ResponseEntity<Products> response = restTemplate.getForEntity(baseURL + "products/"+id, Products.class);
         if(response.getStatusCode() == HttpStatus.OK) {
             return response.getBody();
         } else {
             System.out.println("Error connecting to the server");
-            return null;
+            throw new ShoppingCartException("Unable to get the product catalog");
         }
     }
 }
